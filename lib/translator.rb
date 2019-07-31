@@ -8,7 +8,7 @@ def load_library(file_path)
     "get_meaning" => {},
     "get_emoticon" => {}
   }
-  library.each do |(key, value)|
+  library.each do |key, value|
     look_up_library["get_meaning"][value[1]] = key
     look_up_library["get_emoticon"][value[0]] = value[1]
     end
